@@ -39,12 +39,12 @@ class ReactionRoleManager {
           : this._addRolesToMember();
       case "any":
         return this._memberHasEveryRoleInRoles()
-          ? this._removeRolesFromMember()
+         
           : this._addRolesToMember();
       case "unique":
       default:
         return this._memberHasEveryRoleInRoles()
-          ? this._removeRolesFromMember()
+         
           : this._setRolesToMember();
     }
   }
