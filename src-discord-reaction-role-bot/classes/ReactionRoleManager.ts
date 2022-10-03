@@ -97,9 +97,6 @@ class ReactionRoleManager {
     );
   }
 
-  private async _removeRolesFromMember(): Promise<void> {
-    (this.member as GuildMember).roles.remove(this.roleIds as Snowflake[]);
-  }
 
   private async _addRolesToMember(): Promise<void> {
     (this.member as GuildMember).roles.add(this.roleIds as Snowflake[]);
